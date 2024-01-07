@@ -42,37 +42,37 @@ const handleCreate=async()=>{
     <Form>
     <Form.Group className="mb-3">
       <Form.Label>Name</Form.Label>
-      <Form.Control type="text" placeholder="your name"onChange={(e)=>{setName(e.target.value)}} />
+      <Form.Control type="text" placeholder="Name"onChange={(e)=>{setName(e.target.value)}} />
     </Form.Group>
 
     <Form.Group className="mb-3">
       <Form.Label>Username</Form.Label>
-      <Form.Control type="text" placeholder="enter username"onChange={(e)=>{setUsername(e.target.value)}} />
+      <Form.Control type="text" placeholder="Username"onChange={(e)=>{setUsername(e.target.value)}} />
     </Form.Group>
 
     <Form.Group className="mb-3">
       <Form.Label>Email</Form.Label>
-      <Form.Control type="text" placeholder="enter email"onChange={(e)=>{setEmail(e.target.value)}}/>
+      <Form.Control type="text" placeholder="Email"onChange={(e)=>{setEmail(e.target.value)}}/>
     </Form.Group>
 
     <Form.Group className="mb-3">
       <Form.Label>Address</Form.Label>
-      <Form.Control type="text" placeholder="street"onChange={(e)=>{setAddress(e.target.value)}}/>
+      <Form.Control type="text" placeholder="Address"onChange={(e)=>{setAddress(e.target.value)}}/>
     </Form.Group>
 
     <Form.Group className="mb-3">
       <Form.Label>Phone</Form.Label>
-      <Form.Control type="text" placeholder="phone number"onChange={(e)=>{setPhone(e.target.value)}}/>
+      <Form.Control type="text" placeholder="Phone"onChange={(e)=>{setPhone(e.target.value)}}/>
     </Form.Group>
 
     <Form.Group className="mb-3">
       <Form.Label>Website</Form.Label>
-      <Form.Control type="text" placeholder="website"onChange={(e)=>{setWebsite(e.target.value)}}/>
+      <Form.Control type="text" placeholder="Website"onChange={(e)=>{setWebsite(e.target.value)}}/>
     </Form.Group>
 
     <Form.Group className="mb-3">
       <Form.Label>Company</Form.Label>
-      <Form.Control type="text" placeholder="name"onChange={(e)=>{setCompany(e.target.value)}}/>
+      <Form.Control type="text" placeholder="Company"onChange={(e)=>{setCompany(e.target.value)}}/>
     </Form.Group>
     
     <Button variant="primary" onClick={()=>handleCreate()}>

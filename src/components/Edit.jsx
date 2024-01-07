@@ -45,9 +45,13 @@ function Edit() {
       let res = await axios.get(`${API_URL}/${id}`)
       if(res.status===200)
       {
-        setTitle(res.data.title)
-        setImage(res.data.image)
-        setDescription(res.data.description)
+        setName(res.data.name)
+        setUsername(res.data.username)
+        setEmail(res.data.email)
+        setAddress(res.data.address)
+        setPhone(res.data.phone)
+        setWebsite(res.data.website)
+        setCompany(res.data.company)
       }
     } catch (error) {
         toast.error("Internal Server Error")
