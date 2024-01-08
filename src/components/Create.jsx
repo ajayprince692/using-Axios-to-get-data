@@ -26,7 +26,7 @@ const handleCreate=async()=>{
         let data={name,username,email,address,phone,website,company,status:false}
         let res=await axios.post(API_URL,data)
         if (res.status===201){
-            toast.success("Blog created successfully")
+            toast.success("Data created successfully")
             navigate('/dashboard')
         }
         

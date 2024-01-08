@@ -29,7 +29,7 @@ function Edit() {
       let res = await axios.put(`${API_URL}/${id}`,data)
       if(res.status===200)
       {
-        toast.success("Blog Edited Successfully")
+        toast.warning("Data Edited Successfully")
         navigate('/dashboard')
       }
 

@@ -16,7 +16,7 @@ function Dashboard() {
     try {
       const res = await axios.get(API_URL);
       if (res.status === 200) {
-        toast.success("Changed Succesfully!");
+        toast.success("Submitted Succesfully!");
         setData(res.data);
       }
     } catch (error) {
@@ -45,7 +45,7 @@ function Dashboard() {
       e.status = !e.status;
       const res = await axios.put(`${API_URL}/${e.id}`, e);
       if (res.status === 200) {
-        toast.success("Status Changed!");
+        toast.default("Status Changed!");
         getBlogs();
       }
     } catch (error) {
