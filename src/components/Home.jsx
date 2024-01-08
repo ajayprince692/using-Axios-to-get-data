@@ -19,7 +19,7 @@ const getBlogs=async()=>{
       let res = await axios.get(API_URL)
       if(res.status===200)
       {
-        toast.success('Blogs fetched Successfully!')
+        toast.success('Datas fetched Successfully!')
 
         setData(res.data.filter(e=>e.status))
       }
